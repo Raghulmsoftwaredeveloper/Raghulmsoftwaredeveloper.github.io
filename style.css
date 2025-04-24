@@ -1,4 +1,6 @@
-/* General Reset */
+/* Importing Animations */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,52 +9,46 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #16222a, #3a6073);
+  background-color: #111;
   color: #fff;
-  scroll-behavior: smooth;
-  padding-top: 50px; /* Fix for fixed navbar */
+  overflow-x: hidden;
 }
 
-/* Hero Section */
 .hero {
-  background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  padding: 120px 20px;
+  background: url('your-cartoon-hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative;
-  z-index: 1;
+  color: white;
+  padding: 0 20px;
 }
 
 .hero-title {
   font-size: 3rem;
-  font-weight: 700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.hero-title span {
-  color: #00ffe7;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   margin: 20px 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
+  background-color: #00ffe7;
   padding: 10px 20px;
-  background: #00ffe7;
-  color: #000;
+  border-radius: 30px;
+  color: #111;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #00b2a9;
-  color: #fff;
+  background-color: #fff;
+  color: #00ffe7;
+  transform: scale(1.1);
 }
 
 /* Navbar */
@@ -86,7 +82,7 @@ body {
   color: #00ffe7;
 }
 
-/* Glass effect */
+/* Glass Effect */
 .glass {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
@@ -107,21 +103,35 @@ h2 {
   text-align: center;
 }
 
-/* Skills */
-.skill {
-  margin-bottom: 20px;
+.project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.bar {
-  background: #ddd;
-  height: 5px;
-  border-radius: 5px;
+.project .card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project .card:hover {
+  background-color: #00ffe7;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .progress {
   background: #00ffe7;
   height: 100%;
   border-radius: 5px;
+}
+
+.skill {
+  margin-bottom: 20px;
 }
 
 /* Tech Icons Section */
@@ -168,7 +178,16 @@ footer p {
   margin: 0;
 }
 
-/* Responsive Design */
+/* Scroll Animations */
+@keyframes slideInFromBottom {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+section {
+  animation: slideInFromBottom 1s ease-out;
+}
+
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
