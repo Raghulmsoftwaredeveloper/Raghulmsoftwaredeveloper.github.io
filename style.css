@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);  /* Midnight Blue gradient */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Midnight Blue gradient */
   color: #f1f1f1; /* Soft white for text */
   line-height: 1.6;
 }
@@ -24,12 +24,15 @@ header {
 .hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: 10px;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   font-weight: 300;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.5s;
 }
 
 .btn {
@@ -40,6 +43,9 @@ header {
   border-radius: 30px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 1s;
 }
 
 .btn:hover {
@@ -78,9 +84,26 @@ nav ul li a:hover {
   color: #ffde59;  /* Elegant Gold hover effect */
 }
 
+/* Fade-in animation for sections */
 .section {
   padding: 80px 20px;
   text-align: center;
+  opacity: 0;
+  animation: fadeInSection 1s ease-in-out forwards;
+}
+
+/* Animation delay for sections */
+#about {
+  animation-delay: 0.2s;
+}
+#skills {
+  animation-delay: 0.4s;
+}
+#experience {
+  animation-delay: 0.6s;
+}
+#contact {
+  animation-delay: 0.8s;
 }
 
 .gradient-section {
@@ -113,6 +136,9 @@ nav ul li a:hover {
   text-align: center;
   transition: 0.3s ease;
   border: 1px solid rgba(255,255,255,0.2);
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .glass {
@@ -124,6 +150,7 @@ nav ul li a:hover {
 .skill-card:hover {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffde59;  /* Glowing Gold border on hover */
 }
 
 .experience-card {
@@ -167,11 +194,7 @@ h3 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-}
-
-.delay-1 {
-  animation-delay: 0.3s;
+@keyframes fadeInSection {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
