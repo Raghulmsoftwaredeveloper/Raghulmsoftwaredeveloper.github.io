@@ -1,62 +1,126 @@
-body {
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #dbe6f6, #c5796d);
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #16222a, #3a6073);
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
-}
-
-header {
   text-align: center;
-  padding: 40px 0;
-  background: linear-gradient(120deg, #3a8ef6, #7b4397);
-  color: white;
-  border-radius: 10px;
+  padding: 40px 20px;
 }
 
-header a {
-  color: #fff799;
+.hero {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #00ffe7;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00ffe7;
+  color: #000;
   text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #00000099;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00ffe7;
 }
 
 section {
-  margin: 30px 0;
-  padding: 20px;
-  background: #ffffffcc;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+  padding: 60px 20px;
 }
 
-.alt-section {
-  background: #f0f4f8cc;
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 900px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+.dark {
+  background: rgba(0, 0, 0, 0.4);
 }
 
-h2 {
-  color: #4b0082;
-  border-left: 5px solid #ffbb33;
-  padding-left: 10px;
-  margin-bottom: 15px;
+.skill {
+  margin: 20px 0;
+}
+
+.bar {
+  height: 10px;
+  background: #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  background: #00ffe7;
+  width: 0;
+  animation: load 2s forwards;
+}
+
+@keyframes load {
+  to {
+    width: 100%;
+  }
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
+  padding: 30px 0;
   font-size: 14px;
-  color: #fff;
-  background: #333;
-  padding: 15px;
-  border-radius: 10px;
+  background: #00000099;
 }
