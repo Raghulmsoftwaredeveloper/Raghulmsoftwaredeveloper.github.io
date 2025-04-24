@@ -29,14 +29,14 @@ header {
 .resume-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 40px;
   margin-top: 40px;
 }
 
 .resume-card {
-  flex: 1 1 200px;
-  padding: 45px;
+  flex: 1 1 300px;
+  padding: 30px;
   border-radius: 15px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
