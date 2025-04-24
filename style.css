@@ -7,68 +7,74 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f8f9fa;
-  color: #333;
+  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+  color: #2c2c2c;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(135deg, #3b3b98, #4e54c8);
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
   color: white;
   text-align: center;
-  padding: 100px 20px 80px;
+  padding: 120px 20px 80px;
   position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .btn {
-  background: #fff;
-  color: #4e54c8;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  color: white;
   padding: 10px 25px;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: bold;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
 .btn:hover {
-  background: #4e54c8;
-  color: white;
+  background: white;
+  color: #4e54c8;
 }
 
 .sticky-nav {
-  background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 15px;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.2s ease-in-out;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -76,12 +82,16 @@ nav ul li a:hover {
 }
 
 .section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
-.alt-bg {
-  background: #f0f2f5;
+.glass-section {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 15px;
+  margin: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .skills-grid {
@@ -89,54 +99,57 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .skill-card {
-  background: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-  font-weight: 500;
   min-width: 160px;
+  padding: 20px 25px;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .experience-card {
-  max-width: 600px;
+  max-width: 700px;
   margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border-left: 5px solid #4e54c8;
-  border-radius: 8px;
+  padding: 25px;
+  border-left: 6px solid #4e54c8;
   text-align: left;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 footer {
   background: #4e54c8;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 footer a {
-  color: #fff;
+  color: #ffebc7;
   text-decoration: underline;
 }
 
-/* Headings Styling */
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 h3 {
+  font-size: 1.5rem;
   margin-top: 40px;
   color: #4e54c8;
   font-weight: 600;
