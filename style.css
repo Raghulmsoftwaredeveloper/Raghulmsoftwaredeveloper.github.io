@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);  /* Midnight Blue gradient */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);  /* Midnight Blue gradient */
   color: #f1f1f1; /* Soft white for text */
   line-height: 1.6;
 }
