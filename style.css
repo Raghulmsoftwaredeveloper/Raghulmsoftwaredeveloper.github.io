@@ -26,6 +26,29 @@ header {
   margin-bottom: 10px;
   animation: fadeInUp 1.2s ease forwards;
 }
+.resume-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.resume-card {
+  flex: 1 1 300px;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 222, 89, 0.1);
+}
+
+.resume-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 222, 89, 0.2);
+  border-color: #ffde59;
+}
 
 .hero-text p {
   font-size: 1.2rem;
