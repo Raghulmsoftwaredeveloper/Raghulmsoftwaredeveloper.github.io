@@ -2,101 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raghul M | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span>Raghul M</span></h1>
+      <p class="hero-subtitle">Technical Trainer • Cloud & Programming Enthusiast</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
 
-  <div class="container">
-    <header>
-      <h1>Raghul M</h1>
-      <p>👨‍💻 Technical Trainer | Cloud & Programming Enthusiast</p>
-      <p>
-        📧 <a href="mailto:raghulmagicbus@gmail.com">raghulmagicbus@gmail.com</a> |
-        📞 6385671227 |
-        <a href="https://www.linkedin.com/in/raghul-m52b09328b" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </p>
-    </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section class="fade-in">
-      <h2>🎯 Career Objective</h2>
-      <p>Seeking a challenging role in a reputable organization to utilize my technical and management skills, while expanding my expertise in IT and Cloud technologies.</p>
-    </section>
+  <section id="about" class="glass">
+    <h2>🎯 Career Objective</h2>
+    <p>Seeking a challenging role in a reputable organization to utilize my skills in IT & Cloud, and continue learning emerging technologies.</p>
+  </section>
 
-    <section class="fade-in alt-section">
-      <h2>💻 Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> C, Data Structures, Python, HTML, CSS</li>
-        <li><strong>Cloud:</strong> Azure Fundamentals</li>
-        <li><strong>Tools:</strong> MS Office, Photoshop, WordPress, Canva</li>
-      </ul>
-    </section>
+  <section id="skills" class="glass dark">
+    <h2>💻 Skills</h2>
+    <div class="skill">
+      <p>C / Python / Data Structures</p>
+      <div class="bar"><div class="progress" style="width: 90%"></div></div>
+    </div>
+    <div class="skill">
+      <p>HTML / CSS / JS</p>
+      <div class="bar"><div class="progress" style="width: 85%"></div></div>
+    </div>
+    <div class="skill">
+      <p>Azure / Cloud Fundamentals</p>
+      <div class="bar"><div class="progress" style="width: 70%"></div></div>
+    </div>
+  </section>
 
-    <section class="fade-in">
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>Jain College, Bangalore</strong> – MCA (2023–2025) – 9.57 SGPA</li>
-        <li><strong>M.G.R. College, Hosur</strong> – BCA – 8.139 CGPA</li>
-        <li>Model School, Karimangalam – HSC – 61%</li>
-        <li>Mahakavi Matric HR Sec School – SSLC – 75%</li>
-      </ul>
-    </section>
+  <section id="education" class="glass">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>Jain College</strong> – MCA – 2023–2025 (9.57 SGPA)</li>
+      <li><strong>M.G.R. College</strong> – BCA – 8.139 CGPA</li>
+      <li>HSC – 61%, SSLC – 75%</li>
+    </ul>
+  </section>
 
-    <section class="fade-in alt-section">
-      <h2>🧑‍💼 Experience</h2>
-      <div>
-        <h3>Indian Institute of Embedded Systems, Bengaluru</h3>
-        <p><em>Technical Trainer (2024–2025)</em></p>
-        <ul>
-          <li>Delivered sessions on C, Python, and Data Structures.</li>
-          <li>Designed course material and guided hands-on learning.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Renova Computer Education, Hosur</h3>
-        <p><em>Guest Trainer (2023)</em></p>
-        <ul>
-          <li>Taught C, C++, and MS Office to students of varying levels.</li>
-        </ul>
-      </div>
-    </section>
+  <section id="experience" class="glass dark">
+    <h2>🧑‍🏫 Experience</h2>
+    <p><strong>IIES, Bengaluru</strong> – Technical Trainer (2024–2025)</p>
+    <ul>
+      <li>Training students in C, Python, Data Structures</li>
+    </ul>
+    <p><strong>Renova Computer Education</strong> – Guest Trainer (2023)</p>
+  </section>
 
-    <section class="fade-in">
-      <h2>🏆 Achievements</h2>
-      <ul>
-        <li>🏅 Winner – Debugging Events at Arignar Anna & Don Bosco Colleges</li>
-        <li>🎨 Creativity Award – Science & Tech Fair</li>
-        <li>📌 Placement Coordinator – M.G.R. College (2 years)</li>
-      </ul>
-    </section>
+  <section id="achievements" class="glass">
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>Winner – Debugging @ Don Bosco & Arignar Anna College</li>
+      <li>Creative Science & Tech Fest Award</li>
+    </ul>
+  </section>
 
-    <section class="fade-in alt-section">
-      <h2>📜 Certifications</h2>
-      <ul>
-        <li>Internship in C Programming – Grade A</li>
-        <li>MS Office 2010 Intensive Course</li>
-        <li>Typewriting “Junior” – Distinction</li>
-      </ul>
-    </section>
+  <section id="contact" class="glass dark">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:raghulmagicbus@gmail.com">raghulmagicbus@gmail.com</a></p>
+    <p>Phone: 6385671227</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/raghul-m52b09328b">raghul-m</a></p>
+  </section>
 
-    <footer>
-      <p>📍 Kumudepalli Village, Hosur | © 2025 Raghul M</p>
-    </footer>
-  </div>
-
-  <script>
-    // Animation on scroll
-    const sections = document.querySelectorAll('.fade-in');
-    window.addEventListener('scroll', () => {
-      const triggerBottom = window.innerHeight * 0.85;
-      sections.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-        section.classList.toggle('visible', top < triggerBottom);
-      });
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 Raghul M — Made with 💙</p>
+  </footer>
 </body>
 </html>
