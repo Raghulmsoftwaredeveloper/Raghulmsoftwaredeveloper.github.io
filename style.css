@@ -1,30 +1,29 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
-  color: #2c2c2c;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f1f1f1;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
   text-align: center;
   padding: 120px 20px 80px;
   position: relative;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text h1 {
   font-size: 3.5rem;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
@@ -34,30 +33,28 @@ header {
 }
 
 .btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
   border: 2px solid white;
   color: white;
-  padding: 10px 25px;
-  text-decoration: none;
+  padding: 12px 28px;
   border-radius: 30px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
   background: white;
-  color: #4e54c8;
+  color: #6a11cb;
 }
 
 .sticky-nav {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.6);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 10px 0;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 nav ul {
@@ -67,18 +64,18 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #f1f1f1;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #4e54c8;
+  color: #ffde59;
 }
 
 .section {
@@ -86,12 +83,17 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.gradient-section {
+  background: linear-gradient(to right, #41295a, #2f0743);
+}
+
 .glass-section {
-  background: rgba(255, 255, 255, 0.45);
-  border-radius: 15px;
-  margin: 40px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  margin: 50px;
+  border-radius: 20px;
+  padding: 60px 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 
 .skills-grid {
@@ -105,41 +107,45 @@ nav ul li a:hover {
 
 .skill-card {
   min-width: 160px;
-  padding: 20px 25px;
+  padding: 20px;
   border-radius: 15px;
   font-weight: 500;
-  transition: transform 0.3s ease;
   text-align: center;
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
   border: 1px solid rgba(255,255,255,0.2);
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.05);
+}
+
 .skill-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
 }
 
 .experience-card {
   max-width: 700px;
-  margin: 20px auto;
-  padding: 25px;
-  border-left: 6px solid #4e54c8;
+  margin: 30px auto;
+  padding: 30px;
   text-align: left;
+  background: rgba(255,255,255,0.05);
+  border-left: 5px solid #ffde59;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 footer {
-  background: #4e54c8;
-  color: white;
+  background: #1b1b2f;
+  color: #f1f1f1;
   text-align: center;
   padding: 50px 20px;
 }
 
 footer a {
-  color: #ffebc7;
+  color: #ffde59;
   text-decoration: underline;
 }
 
@@ -151,11 +157,11 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-top: 40px;
-  color: #4e54c8;
+  color: #ffde59;
   font-weight: 600;
 }
 
-/* Animations */
+/* Fade-in Animations */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -167,5 +173,5 @@ h3 {
 }
 
 .delay-1 {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
